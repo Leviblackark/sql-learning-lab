@@ -40,3 +40,23 @@ Local database files used for SQL practice:
 ```text
 databases/
 ```
+
+### Concept 
+"""text
+sql-learning-lab/
+│
+├── notes/
+│   └── understanding concepts
+│
+├── practice/
+│   └── learning how to actually write SQL
+│
+├── databases/
+│   └── local SQLite databases
+│
+├── data/
+│   └── CSV/source datasets
+│
+└── projects/
+    └── applying SQL to real questions
+"""
