@@ -224,3 +224,104 @@ LIMIT number_of_rows;
 > `SELECT` chooses **columns**.  
 > `FROM` chooses the **table**.  
 > `LIMIT` chooses how many **rows** are returned.
+
+---
+
+## CREATE TABLE
+
+Creates a new table and defines its columns.
+
+```sql
+CREATE TABLE table_name (
+    id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    description TEXT
+);
+```
+
+## INSERT INTO
+
+Adds a new record to an existing table.
+
+```sql
+INSERT INTO table_name (id, name)
+VALUES (1, 'Example');
+```
+
+## NULL / NOT NULL
+
+| Keyword | Meaning |
+|---|---|
+| `NULL` | Missing or unknown value |
+| `NOT NULL` | Column must contain a non-NULL value |
+| `PRIMARY KEY` | Uniquely identifies a record |
+
+**Detailed notes:** [Creating Tables and Inserting Data](04-create-tables.md)
+
+---
+
+## SQL Comments
+
+Comments are ignored by SQL and are used to leave notes inside query files.
+
+### Single-line comment
+
+Use:
+
+```sql
+-- This is a comment
+
+SELECT *
+FROM customers;
+```
+
+Everything after `--` on that line is ignored.
+
+Example:
+
+```sql
+SELECT
+    first_name,
+    last_name
+FROM customers; -- Return customer names
+```
+
+### Multi-line / block comment
+
+Use:
+
+```sql
+/*
+This is a multi-line comment.
+It can cover several lines.
+*/
+```
+
+Example:
+
+```sql
+SELECT
+    first_name,
+    /*
+    email,
+    phone_number,
+    */
+    city
+FROM customers;
+```
+
+The section inside `/* ... */` is ignored.
+
+### Quick Reference
+
+| Syntax | Meaning |
+|---|---|
+| `-- comment` | Single-line comment |
+| `/* comment */` | Multi-line / block comment |
+
+Comments are useful for:
+
+- explaining what a query does
+- labelling exercises
+- leaving reminders
+- temporarily disabling part of a query

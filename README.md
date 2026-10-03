@@ -42,7 +42,8 @@ databases/
 ```
 
 ### Concept 
-"""text
+
+```text
 sql-learning-lab/
 │
 ├── notes/
@@ -59,4 +60,4 @@ sql-learning-lab/
 │
 └── projects/
     └── applying SQL to real questions
-"""
+```
